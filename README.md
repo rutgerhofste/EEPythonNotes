@@ -1,5 +1,5 @@
 # EEPythonNotes
-Lessons learned switching from Javascript to Python API for Earth Engine
+## Lessons learned switching from Javascript to Python API for Earth Engine
 
 Installation etc. was done using information on the ee website. 
  
