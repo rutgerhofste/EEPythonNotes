@@ -7,9 +7,9 @@ Installation etc. was done using information on the ee website.
  
 2. In order to print a variable, you have to make the parameter client side instead of server side. Use .getInfo() to get the job done. https://developers.google.com/earth-engine/client_server
  
-3. Arguments in methods are not specified in a dictionary format but in a pythonic way: geometry = ee.Geometry.Polygon(coords = [[0, 0], [10,  0], [10, 10], [0, 10]]) Instead of var geometry = ee.Geometry.Polygon({coords: [[0, 0], [10,  0], [10, 10], [0, 10]],geodesic:false});
+3. Arguments in methods are not specified in a dictionary format but in a pythonic way: `geometry = ee.Geometry.Polygon(coords = [[0, 0], [10,  0], [10, 10], [0, 10]])` Instead of var `geometry = ee.Geometry.Polygon({coords: [[0, 0], [10,  0], [10, 10], [0, 10]],geodesic:false});`
  
-4. Export tasks can be found under ee.batch.Export and should also be started using .start()
+4. Export tasks can be found under `ee.batch.Export` and should also be started using `.start()`
  
 5. You can check progress of tasks using .status()
  
@@ -18,14 +18,14 @@ Installation etc. was done using information on the ee website.
 
  
 When exporting, the region has to be client side in JSON format:
-region=geometry.getInfo()['coordinates']
+`region=geometry.getInfo()['coordinates']`
  
 You can get a tasks list with the following command
-ee.batch.Task.list()
+`ee.batch.Task.list()`
  
 Export task function is client side. 
  
-Use True, False and None instead of true, false and null
+Use `True`, `False` and `None` instead of `true`, `false` and `null`
  
 Use retrying library for exponential backoff
  
