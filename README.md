@@ -7,7 +7,7 @@ Installation etc. was done using information on the ee website (Jan 2017)
  
 2. In order to print a variable, you have to make the parameter client side instead of server side. Use `.getInfo()` to get the job done. [link](https://developers.google.com/earth-engine/client_server)
  
-3. Arguments in methods are not specified in a dictionary format but in a pythonic way: `geometry = ee.Geometry.Polygon(coords = [[0, 0], [10,  0], [10, 10], [0, 10]])` Instead of var `geometry = ee.Geometry.Polygon({coords: [[0, 0], [10,  0], [10, 10], [0, 10]],geodesic:false});`
+3. Arguments in methods are not specified in a dictionary format but in a pythonic way: `geometry = ee.Geometry.Polygon(coords = [[0, 0], [10,  0], [10, 10], [0, 10]], geodesic =False )` Instead of var `geometry = ee.Geometry.Polygon({coords: [[0, 0], [10,  0], [10, 10], [0, 10]],geodesic:false});`
  
 4. Export tasks can be found under `ee.batch.Export` and should also be started using `.start()`
  
