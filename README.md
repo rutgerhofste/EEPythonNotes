@@ -39,7 +39,7 @@ Want to run python scripts on a virtual machine in the cloud, use compute engine
  
 After that will have to authenticate and transfer the script (gsutil) 
  
-Using command line tool (using subprocess and bored by slowness), use google cloud shell and a bash script. 
+Using command line tool (using subprocess and bored by slowness), use google cloud shell and a bash script.  
  
 
  
