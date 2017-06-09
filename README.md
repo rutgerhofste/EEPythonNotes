@@ -11,27 +11,23 @@ Installation etc. was done using information on the ee website.
  
 4. Export tasks can be found under `ee.batch.Export` and should also be started using `.start()`
  
-5. You can check progress of tasks using .status()
+5. You can check progress of tasks using `<TASKNAME>.status()`
  
 6. Mapping functions client side works according to Python syntax. You should cast type again after mapping. `newVariable = map(function,sequence)`
  
 
  
-When exporting, the region has to be client side in JSON format:
-`region=geometry.getInfo()['coordinates']`
+7. When exporting, the region has to be client side in JSON format: `region=geometry.getInfo()['coordinates']`
  
-You can get a tasks list with the following command
+8. You can get a tasks list with the following command
 `ee.batch.Task.list()`
  
-Export task function is client side. 
+9. Export task function is client side. 
  
-Use `True`, `False` and `None` instead of `true`, `false` and `null`
+10. Use `True`, `False` and `None` instead of `true`, `false` and `null`
  
-Use retrying library for exponential backoff
+11. Use retrying library for exponential backoff [link](https://pypi.python.org/pypi/retrying)
  
-Using command line tool (using subprocess and bored by slowness), use google cloud shell and a bash script. 
-
-
 The following notes are probably no longer relevant now the datalab option is available: 
 Want to run python scripts on a virtual machine in the cloud, use compute engine with the following commands:
  
@@ -41,8 +37,9 @@ sudo pip install cryptography google-api-python-client earthengine-api
  
 After that will have to authenticate and transfer the script (gsutil) 
  
+Using command line tool (using subprocess and bored by slowness), use google cloud shell and a bash script. 
  
- 
+
  
  
  
