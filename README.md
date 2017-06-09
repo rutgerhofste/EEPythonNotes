@@ -1,7 +1,7 @@
 # EEPythonNotes
 ## Lessons learned switching from Javascript to Python API for Earth Engine
 
-Installation etc. was done using information on the ee website. 
+Installation etc. was done using information on the ee website (Jan 2017)
  
 1. Dictionaries in python are declared using a colon and keys MUST be in quotes e.g. {“foo” : 42}
  
