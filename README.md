@@ -9,7 +9,6 @@ In order to print a variable, you have to make the parameter client side instead
  
 Arguments in methods are not specified in a dictionary format but in a pythonic way:
 geometry = ee.Geometry.Polygon(coords = [[0, 0], [10,  0], [10, 10], [0, 10]])
- 
 Instead of 
 var geometry = ee.Geometry.Polygon({
   coords: [[0, 0], [10,  0], [10, 10], [0, 10]],
@@ -24,7 +23,6 @@ Mapping functions client side works according to Python syntax. You should cast 
  
 newVariable = map(function,sequence)
  
- 
 When exporting, the region has to be client side in JSON format:
 region=geometry.getInfo()['coordinates']
  
@@ -38,7 +36,9 @@ Use True, False and None instead of true, false and null
 Use retrying library for exponential backoff
  
 Using command line tool (using subprocess and bored by slowness), use google cloud shell and a bash script. 
- 
+
+
+The following notes are probably no longer relevant now the datalab option is available: 
 Want to run python scripts on a virtual machine in the cloud, use compute engine with the following commands:
  
 sudo apt-get update
