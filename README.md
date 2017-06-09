@@ -32,7 +32,9 @@ The following notes are probably no longer relevant now the datalab option is av
 Want to run python scripts on a virtual machine in the cloud, use compute engine with the following commands:
  
 `sudo apt-get update`
+
 `sudo apt-get install libffi-dev libssl-dev python-dev python-pip`
+
 `sudo pip install cryptography google-api-python-client earthengine-api`
  
 After that will have to authenticate and transfer the script (gsutil) 
