@@ -27,6 +27,7 @@ Installation etc. was done using information on the ee website (Jan 2017)
 10. Use `True`, `False` and `None` instead of `true`, `false` and `null`
  
 11. Use retrying library for exponential backoff [link](https://pypi.python.org/pypi/retrying)
+
  
 The following notes are probably no longer relevant now the datalab option is available: 
 Want to run python scripts on a virtual machine in the cloud, use compute engine with the following commands:
