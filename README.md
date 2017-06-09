@@ -19,8 +19,7 @@ Installation etc. was done using information on the ee website (Jan 2017)
  
 7. When exporting, the region has to be client side in JSON format: `region=geometry.getInfo()['coordinates']`
  
-8. You can get a tasks list with the following command
-`ee.batch.Task.list()`
+8. You can get a tasks list with the following command `ee.batch.Task.list()` or check out a little [script](https://github.com/rutgerhofste/EEPythonNotes/blob/master/checkStatus.py) I wrote.
  
 9. Export task function is client side. 
  
