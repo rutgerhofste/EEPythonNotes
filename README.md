@@ -9,13 +9,13 @@ Installation etc. was done using information on the ee website.
  
 3. Arguments in methods are not specified in a dictionary format but in a pythonic way: geometry = ee.Geometry.Polygon(coords = [[0, 0], [10,  0], [10, 10], [0, 10]]) Instead of var geometry = ee.Geometry.Polygon({coords: [[0, 0], [10,  0], [10, 10], [0, 10]],geodesic:false});
  
-Export tasks can be found under ee.batch.Export and should also be started using .start()
+4. Export tasks can be found under ee.batch.Export and should also be started using .start()
  
-You can check progress of tasks using .status()
+5. You can check progress of tasks using .status()
  
-Mapping functions client side works according to Python syntax. You should cast type again after mapping. 
+6. Mapping functions client side works according to Python syntax. You should cast type again after mapping. `newVariable = map(function,sequence)`
  
-newVariable = map(function,sequence)
+
  
 When exporting, the region has to be client side in JSON format:
 region=geometry.getInfo()['coordinates']
